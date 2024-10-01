@@ -6,7 +6,7 @@ const greenCheck = "\u{2705}"
   if (actual === expected) {
     console.log(`${greenCheck} Assertion Passed: ${actual} === ${expected}`);
   } else {
-    console.log(`${stopSign} Assertion Failed: ${actual} !== $expected}`);
+    console.log(`${stopSign} Assertion Failed: ${actual} !== ${expected}`);
   }
 };
 
