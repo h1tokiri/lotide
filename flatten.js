@@ -126,3 +126,20 @@ console.log(flatten([1, 2, [3, 4], 5, [6]])); // => [1, 2, 3, 4, 5, 6]
 // so i need a loop to check everything
 // i need to compare if something is an array first
 // after writing all of this im not sure why i copied it over tbh...
+
+//larryAI feedback from submission
+
+// Implement the flatten function
+// Great job! Your flatten function meets the requirements perfectly. It takes an array as an input and returns a new array with any nested arrays within it flattened. Your code is clean and well-structured, and your use of comments to explain what each part of the code does is excellent.
+
+// Here are a few suggestions for improvement:
+
+// You have defined eqArrays function twice in your code. You can remove the duplicate to make your code cleaner.
+
+// In your assertEqual function, you have a commented-out section where you mention an update from "LarryAI". It seems like you've decided to stick with your original code, which is fine. However, to keep your code clean and readable, it would be a good idea to remove these comments.
+
+// Your assertEqual function checks if the inputs are arrays and then uses eqArrays to compare them. This is a bit redundant because you already have assertArraysEqual function for comparing arrays. You could simplify assertEqual to only handle non-array comparisons.
+
+// You have a lot of commented-out test cases for assertArraysEqual and eqArrays functions. It's good to test your functions thoroughly, but once you're done testing, it's a good idea to remove these comments to keep your code clean and focused on the main task, which is the flatten function.
+
+// Keep up the good work! Your understanding of JavaScript arrays and functions is clearly demonstrated in your code.
