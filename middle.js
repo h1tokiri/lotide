@@ -111,6 +111,7 @@ const middle = function (arr) {
 // middle([1, 2, 3, 4]); // => [2, 3]
 // middle([1, 2, 3, 4, 5, 6]); // => [3, 4]
 
+// what i submitted
 console.log(middle([1])); // => []
 console.log(middle([1, 2])); // => []
 console.log(middle([1, 2, 3])); // => [2]
@@ -122,4 +123,44 @@ console.log(middle([200,400,300,100,500])); // => [300]
 console.log(middle([200,400,300,100,500,700,900,150])); // => [100, 500]
 
 
+// replacing with assertArraysEqual, and then adding second array for it to compare against
+
+assertArraysEqual(middle([1]), []); // should pass, returns an empty array for single element array
+assertArraysEqual(middle([1, 2]), []); // should pass, returns an empty array for two element array
+assertArraysEqual(middle([1, 2, 3]), [2]); // should pass, returns [2]
+assertArraysEqual(middle([1, 2, 3, 4, 5]), [3]); // should pass, returns [3]
+assertArraysEqual(middle([1, 2, 3, 4]), [2, 3]); // should pass, returns [2, 3]
+assertArraysEqual(middle([1, 2, 3, 4, 5, 6]), [3, 4]); // should pass, returns [3, 4]
+assertArraysEqual(middle([200,400,300,100,500]), [300]); // should pass, returns [300]
+assertArraysEqual(middle([200,400,300,100,500,700,900,150]), [100, 500]); // should pass, returns [100, 500]
+
+
 // now that i have this, need to figure out how to pass it through the other 2 functions i brought in, not sure why i brought them in but it seems they want me to do that
+
+/* from larry ai
+
+Implement the middle function
+Great job on implementing the middle function! Your function correctly handles arrays of different lengths and returns the middle elements as expected. Your code is clean, well-organized, and your use of comments to explain your thought process is excellent.
+
+However, you seem to have missed one of the requirements. The requirement states that you should use the assertArraysEqual function to test the middle function. Currently, you're using console.log to print the output of the middle function, but you're not actually checking if the output is correct.
+
+Here's a small section of your code:
+
+console.log(middle([1, 2, 3])); // => [2]
+console.log(middle([1, 2, 3, 4, 5])); // => [3]
+console.log(middle([1, 2, 3, 4])); // => [2, 3]
+console.log(middle([1, 2, 3, 4, 5, 6])); // => [3, 4]
+console.log(middle([200,400,300,100,500])); // => [300]
+You could modify this to use assertArraysEqual like so:
+
+assertArraysEqual(middle([1, 2, 3]), [2]);
+assertArraysEqual(middle([1, 2, 3, 4, 5]), [3]);
+assertArraysEqual(middle([1, 2, 3, 4]), [2, 3]);
+assertArraysEqual(middle([1, 2, 3, 4, 5, 6]), [3, 4]);
+assertArraysEqual(middle([200,400,300,100,500]), [300]);
+This way, you're not just printing the output of the middle function, but also verifying that it's correct.
+
+Keep going! Your submission seems like it might be missing something. Take a look at the requirement about using assertArraysEqual to test your middle function.
+
+
+*/
