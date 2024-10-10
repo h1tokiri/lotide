@@ -111,16 +111,16 @@ const middle = function (arr) {
 // middle([1, 2, 3, 4]); // => [2, 3]
 // middle([1, 2, 3, 4, 5, 6]); // => [3, 4]
 
-// what i submitted
-console.log(middle([1])); // => []
-console.log(middle([1, 2])); // => []
-console.log(middle([1, 2, 3])); // => [2]
-console.log(middle([1, 2, 3, 4, 5])); // => [3]
-console.log(middle([1, 2, 3, 4])); // => [2, 3]
-console.log(middle([1, 2, 3, 4, 5, 6])); // => [3, 4]
-console.log(middle([200,400,300,100,500])); // => [300]
+// what i submitted, twas incorrect so it will be commented out
+// console.log(middle([1])); // => []
+// console.log(middle([1, 2])); // => []
+// console.log(middle([1, 2, 3])); // => [2]
+// console.log(middle([1, 2, 3, 4, 5])); // => [3]
+// console.log(middle([1, 2, 3, 4])); // => [2, 3]
+// console.log(middle([1, 2, 3, 4, 5, 6])); // => [3, 4]
+// console.log(middle([200,400,300,100,500])); // => [300]
 
-console.log(middle([200,400,300,100,500,700,900,150])); // => [100, 500]
+// console.log(middle([200,400,300,100,500,700,900,150])); // => [100, 500]
 
 
 // replacing with assertArraysEqual, and then adding second array for it to compare against
