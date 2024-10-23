@@ -80,3 +80,16 @@ assertArraysEqual(letterPositions("hello").l, [2,3]);
 }
 
 */
+
+/* AI feedback
+Implement the letterPositions function
+Great job! Your letterPositions function correctly creates an object with keys for each character in the string and values as arrays of the positions where each character appears. You've also correctly implemented the eqArrays and assertArraysEqual functions for testing purposes.
+
+Your test case assertArraysEqual(letterPositions("hello").l, [2,3]); is correctly implemented and will correctly test whether the 'l' character in the string 'hello' appears at the indices 2 and 3.
+
+One small suggestion for improvement:
+
+In your letterPositions function, you're declaring const char = sentence[i]; inside the loop. While this is not incorrect, it would be more efficient to declare let char; before the loop and then just assign char = sentence[i]; inside the loop. This way, you're not creating a new constant on each iteration of the loop.
+
+Keep up the good work!
+*/
