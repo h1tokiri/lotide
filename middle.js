@@ -4,27 +4,32 @@ const stopSign = "\u{1F6D1}"; // keeping my emojis
 const greenCheck = "\u{2705}";
 
 // eqArrays function that was copied over
-const eqArrays = function(arr1, arr2) {
-  if (arr1.length !== arr2.length) {
-    return false;
-  }
 
-  for (let i = 0; i < arr1.length; i++) {
-    if (arr1[i] !== arr2[i]) {
-      return false;
-    }
-  }
-  return true;
-};
+const eqArrays = require("./eqArrays");
 
-const assertArraysEqual = function(arr1, arr2) {
-  //check if the arrays are equal using eqArrays
-  if (eqArrays(arr1, arr2)) {
-    console.log(`${greenCheck} Assertion Passed: ${arr1} === ${arr2}`);
-  } else {
-    console.log(`${stopSign} Assertion Failed: ${arr1} !== ${arr2}`);
-  }
-};
+// const eqArrays = function(arr1, arr2) {
+//   if (arr1.length !== arr2.length) {
+//     return false;
+//   }
+
+//   for (let i = 0; i < arr1.length; i++) {
+//     if (arr1[i] !== arr2[i]) {
+//       return false;
+//     }
+//   }
+//   return true;
+// };
+
+const assertArraysEqual = require("./assertArraysEqual");
+
+// const assertArraysEqual = function(arr1, arr2) {
+//   //check if the arrays are equal using eqArrays
+//   if (eqArrays(arr1, arr2)) {
+//     console.log(`${greenCheck} Assertion Passed: ${arr1} === ${arr2}`);
+//   } else {
+//     console.log(`${stopSign} Assertion Failed: ${arr1} !== ${arr2}`);
+//   }
+// };
 
 // assertArraysEqual([1, 2, 3], [1, 2, 3]); // Should pass
 // assertArraysEqual([1, 2, 3], [3, 2, 1]); // Should fail
@@ -102,7 +107,7 @@ const middle = function (arr) {
   }
 };
 
-
+module.exports = middle;
 
 // middle([1]); // => []
 // middle([1, 2]); // => []
@@ -125,14 +130,14 @@ const middle = function (arr) {
 
 // replacing with assertArraysEqual, and then adding second array for it to compare against
 
-assertArraysEqual(middle([1]), []); // should pass, returns an empty array for single element array
-assertArraysEqual(middle([1, 2]), []); // should pass, returns an empty array for two element array
-assertArraysEqual(middle([1, 2, 3]), [2]); // should pass, returns [2]
-assertArraysEqual(middle([1, 2, 3, 4, 5]), [3]); // should pass, returns [3]
-assertArraysEqual(middle([1, 2, 3, 4]), [2, 3]); // should pass, returns [2, 3]
-assertArraysEqual(middle([1, 2, 3, 4, 5, 6]), [3, 4]); // should pass, returns [3, 4]
-assertArraysEqual(middle([200,400,300,100,500]), [300]); // should pass, returns [300]
-assertArraysEqual(middle([200,400,300,100,500,700,900,150]), [100, 500]); // should pass, returns [100, 500]
+// assertArraysEqual(middle([1]), []); // should pass, returns an empty array for single element array
+// assertArraysEqual(middle([1, 2]), []); // should pass, returns an empty array for two element array
+// assertArraysEqual(middle([1, 2, 3]), [2]); // should pass, returns [2]
+// assertArraysEqual(middle([1, 2, 3, 4, 5]), [3]); // should pass, returns [3]
+// assertArraysEqual(middle([1, 2, 3, 4]), [2, 3]); // should pass, returns [2, 3]
+// assertArraysEqual(middle([1, 2, 3, 4, 5, 6]), [3, 4]); // should pass, returns [3, 4]
+// assertArraysEqual(middle([200,400,300,100,500]), [300]); // should pass, returns [300]
+// assertArraysEqual(middle([200,400,300,100,500,700,900,150]), [100, 500]); // should pass, returns [100, 500]
 
 
 // now that i have this, need to figure out how to pass it through the other 2 functions i brought in, not sure why i brought them in but it seems they want me to do that
