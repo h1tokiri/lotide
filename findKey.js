@@ -32,3 +32,4 @@ const result = findKey(
 ); // => "noma"
 
 assertEqual(result, "noma");
+assertEqual(result, "Ora");
