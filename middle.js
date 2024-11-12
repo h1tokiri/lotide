@@ -95,7 +95,7 @@ const middle = function (arr) {
   if (arr.length <= 2) {
     return [];
   }
-  if (arr.length % 2 !== 0) { // confirm this is an odd number 
+  if (arr.length % 2 !== 0) { // confirm this is an odd number
     const middleIndex = Math.floor((arr.length - 1) / 2); // calculate the middle index
     return [arr[middleIndex]]; // return the middle element in an array
   }
