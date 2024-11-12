@@ -39,3 +39,5 @@ assertEqual(findKeyByValue(bestTVShowsByGenre, "That '70s Show"), undefined);
 
 // assertEqual(eqArrays(["1", "2", "3"], ["1", "2", "3"]), true); // => true
 // assertEqual(eqArrays(["1", "2", "3"], ["1", "2", 3]), false); // => false
+
+module.exports = findKeyByValue;
