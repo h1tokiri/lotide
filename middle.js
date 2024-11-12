@@ -99,7 +99,7 @@ const middle = function (arr) {
     const middleIndex = Math.floor((arr.length - 1) / 2); // calculate the middle index
     return [arr[middleIndex]]; // return the middle element in an array
   }
-  
+
   if (arr.length % 2 === 0) {   // confirm this is an even number
     const firstMiddleIndex = (arr.length / 2) - 1;
     const secondMiddleIndex = arr.length / 2;
