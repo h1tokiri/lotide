@@ -93,3 +93,5 @@ In your letterPositions function, you're declaring const char = sentence[i]; ins
 
 Keep up the good work!
 */
+
+module.exports = letterPositions;
