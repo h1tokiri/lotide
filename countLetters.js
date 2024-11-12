@@ -99,3 +99,5 @@ printObject(expected);
 // There are several commented out lines of code at the end of your file. It's a good practice to remove any unused or unnecessary code to keep your codebase clean and easy to read.
 
 // Keep going! You're on the right track.
+
+module.exports = countLetters;
