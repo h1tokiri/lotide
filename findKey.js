@@ -33,3 +33,5 @@ const result = findKey(
 
 assertEqual(result, "noma");
 assertEqual(result, "Ora");
+
+module.exports = findKey;
