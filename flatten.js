@@ -143,3 +143,5 @@ console.log(flatten([1, 2, [3, 4], 5, [6]])); // => [1, 2, 3, 4, 5, 6]
 // You have a lot of commented-out test cases for assertArraysEqual and eqArrays functions. It's good to test your functions thoroughly, but once you're done testing, it's a good idea to remove these comments to keep your code clean and focused on the main task, which is the flatten function.
 
 // Keep up the good work! Your understanding of JavaScript arrays and functions is clearly demonstrated in your code.
+
+module.exports = flatten;
