@@ -26,7 +26,7 @@ module.exports = {
   assertEqual: assertEqual,
   eqArrays: eqArrays,
   assertObjectsEqual: assertObjectsEqual,
-  counterLetters: countLetters,
+  countLetters: countLetters,
   countOnly: countOnly,
   eqObjects: eqObjects,
   findKey: findKey,
