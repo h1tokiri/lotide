@@ -36,3 +36,5 @@ describe("#tail", () => {
 // const words = ["Yo Yo", "Liighthouse", "Labs"];
 // tail(words);
 // assertEqual(words.length, 3);// Forcing a change
+
+console.log("take the damn file");
