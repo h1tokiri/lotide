@@ -37,4 +37,4 @@ describe("#tail", () => {
 // tail(words);
 // assertEqual(words.length, 3);// Forcing a change
 
-console.log("take the damn file");
+// console.log("take the damn file");
